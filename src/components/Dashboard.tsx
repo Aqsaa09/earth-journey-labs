@@ -4,12 +4,10 @@ import { Badge } from "@/components/ui/badge";
 import { Progress } from "@/components/ui/progress";
 import ImpactChart from "@/components/ImpactChart";
 import { 
-  Leaf, 
-  Zap, 
-  Droplets, 
-  Wind, 
-  Trophy, 
   Target, 
+  Zap, 
+  BookOpen, 
+  Trophy, 
   Users, 
   Calendar,
   TrendingUp,
@@ -19,17 +17,17 @@ import {
 const Dashboard = () => {
   const challenges = [
     {
-      title: "Carbon Footprint Calculator Challenge",
-      description: "Calculate and reduce your daily carbon emissions",
+      title: "Math Mastery Challenge",
+      description: "Solve 50 algebra problems to unlock the next level",
       progress: 75,
       points: 150,
-      icon: <Leaf className="h-5 w-5" />,
+      icon: <Target className="h-5 w-5" />,
       difficulty: "Easy",
       deadline: "3 days left"
     },
     {
-      title: "Renewable Energy Quiz",
-      description: "Master the basics of solar and wind energy",
+      title: "Science Explorer Quiz",
+      description: "Master the fundamentals of physics and chemistry",
       progress: 45,
       points: 200,
       icon: <Zap className="h-5 w-5" />,
@@ -37,21 +35,21 @@ const Dashboard = () => {
       deadline: "1 week left"
     },
     {
-      title: "Water Conservation Project",
-      description: "Design a water-saving system for your school",
+      title: "History Timeline Project",
+      description: "Create an interactive timeline of world events",
       progress: 20,
       points: 300,
-      icon: <Droplets className="h-5 w-5" />,
+      icon: <BookOpen className="h-5 w-5" />,
       difficulty: "Hard",
       deadline: "2 weeks left"
     }
   ];
 
   const achievements = [
-    { name: "Eco Warrior", description: "Complete 5 challenges", earned: true },
-    { name: "Energy Saver", description: "Reduce energy usage by 20%", earned: true },
-    { name: "Carbon Neutral", description: "Offset 100kg of CO2", earned: false },
-    { name: "Green Leader", description: "Lead a team challenge", earned: false }
+    { name: "Quick Learner", description: "Complete 5 challenges", earned: true },
+    { name: "Knowledge Seeker", description: "Study for 20+ hours", earned: true },
+    { name: "Quiz Master", description: "Score 100% on 10 quizzes", earned: false },
+    { name: "Team Leader", description: "Lead a group project", earned: false }
   ];
 
   return (
@@ -60,13 +58,13 @@ const Dashboard = () => {
         {/* Header */}
         <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-4">
           <div>
-            <h1 className="text-3xl font-bold text-foreground">Welcome back, Alex! 🌱</h1>
-            <p className="text-muted-foreground">You're making a real difference for our planet</p>
+            <h1 className="text-3xl font-bold text-foreground">Welcome back, Alex! 🎓</h1>
+            <p className="text-muted-foreground">Keep up the amazing learning progress!</p>
           </div>
           <div className="flex gap-3">
             <Button className="bg-gradient-primary text-primary-foreground">
               <Calendar className="h-4 w-4 mr-2" />
-              Today's Actions
+              Today's Lessons
             </Button>
           </div>
         </div>
@@ -93,14 +91,14 @@ const Dashboard = () => {
             <CardContent className="p-6">
               <div className="flex items-center justify-between">
                 <div>
-                  <p className="text-muted-foreground text-sm">CO2 Saved</p>
-                  <p className="text-3xl font-bold text-foreground">47.3kg</p>
+                  <p className="text-muted-foreground text-sm">XP Earned</p>
+                  <p className="text-3xl font-bold text-foreground">2,847</p>
                 </div>
-                <Wind className="h-8 w-8 text-primary" />
+                <Award className="h-8 w-8 text-warning" />
               </div>
               <div className="flex items-center gap-1 mt-2">
                 <Target className="h-4 w-4 text-success" />
-                <span className="text-sm text-muted-foreground">Target: 60kg</span>
+                <span className="text-sm text-muted-foreground">Goal: 3,000 XP</span>
               </div>
             </CardContent>
           </Card>

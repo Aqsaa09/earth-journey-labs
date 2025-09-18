@@ -1,22 +1,22 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer, BarChart, Bar } from 'recharts';
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { TrendingUp, Leaf } from "lucide-react";
+import { TrendingUp, BarChart3 } from "lucide-react";
 
 const ImpactChart = () => {
-  const carbonData = [
-    { month: 'Jan', reduced: 12, target: 15 },
-    { month: 'Feb', reduced: 19, target: 20 },
-    { month: 'Mar', reduced: 24, target: 25 },
-    { month: 'Apr', reduced: 31, target: 30 },
-    { month: 'May', reduced: 28, target: 35 },
-    { month: 'Jun', reduced: 35, target: 40 },
+  const learningData = [
+    { month: 'Jan', completed: 12, target: 15 },
+    { month: 'Feb', completed: 19, target: 20 },
+    { month: 'Mar', completed: 24, target: 25 },
+    { month: 'Apr', completed: 31, target: 30 },
+    { month: 'May', completed: 28, target: 35 },
+    { month: 'Jun', completed: 35, target: 40 },
   ];
 
   const activityData = [
-    { activity: 'Energy Saved', value: 340, color: '#10b981' },
-    { activity: 'Water Conserved', value: 156, color: '#3b82f6' },
-    { activity: 'Waste Reduced', value: 280, color: '#f59e0b' },
-    { activity: 'Trees Planted', value: 45, color: '#22c55e' },
+    { activity: 'Lessons Completed', value: 340, color: '#10b981' },
+    { activity: 'Quizzes Passed', value: 156, color: '#3b82f6' },
+    { activity: 'Projects Finished', value: 28, color: '#f59e0b' },
+    { activity: 'Badges Earned', value: 45, color: '#22c55e' },
   ];
 
   return (
@@ -25,12 +25,12 @@ const ImpactChart = () => {
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
             <TrendingUp className="h-5 w-5 text-success" />
-            Carbon Reduction Progress
+            Learning Progress
           </CardTitle>
         </CardHeader>
         <CardContent>
           <ResponsiveContainer width="100%" height={300}>
-            <LineChart data={carbonData}>
+            <LineChart data={learningData}>
               <CartesianGrid strokeDasharray="3 3" stroke="hsl(var(--border))" />
               <XAxis 
                 dataKey="month" 
@@ -52,10 +52,10 @@ const ImpactChart = () => {
               <Legend />
               <Line 
                 type="monotone" 
-                dataKey="reduced" 
+                dataKey="completed" 
                 stroke="hsl(var(--success))" 
                 strokeWidth={3}
-                name="CO2 Reduced (kg)"
+                name="Lessons Completed"
                 dot={{ fill: 'hsl(var(--success))', strokeWidth: 2, r: 4 }}
               />
               <Line 
@@ -64,7 +64,7 @@ const ImpactChart = () => {
                 stroke="hsl(var(--muted-foreground))" 
                 strokeWidth={2}
                 strokeDasharray="5 5"
-                name="Monthly Target"
+                name="Monthly Goal"
                 dot={{ fill: 'hsl(var(--muted-foreground))', strokeWidth: 2, r: 3 }}
               />
             </LineChart>
@@ -75,8 +75,8 @@ const ImpactChart = () => {
       <Card className="bg-gradient-card border border-border shadow-medium">
         <CardHeader>
           <CardTitle className="flex items-center gap-2">
-            <Leaf className="h-5 w-5 text-primary" />
-            Environmental Impact
+            <BarChart3 className="h-5 w-5 text-primary" />
+            Learning Activities
           </CardTitle>
         </CardHeader>
         <CardContent>

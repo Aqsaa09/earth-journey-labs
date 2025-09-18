@@ -13,10 +13,7 @@ import {
   Zap, 
   Trophy,
   Clock,
-  Star,
-  TreePine,
-  Recycle,
-  Droplets
+  Star
 } from "lucide-react";
 
 const Index = () => {
@@ -24,17 +21,17 @@ const Index = () => {
 
   const challenges = [
     {
-      title: "Plastic-Free Week Challenge",
-      description: "Eliminate single-use plastics for 7 days",
+      title: "Math Olympics Challenge",
+      description: "Solve complex algebra and geometry problems",
       duration: "1 week",
       difficulty: "Medium",
       participants: 1247,
-      icon: <Recycle className="h-6 w-6" />,
+      icon: <Target className="h-6 w-6" />,
       points: 250
     },
     {
-      title: "Energy Audit Project",
-      description: "Conduct energy efficiency assessment of your school",
+      title: "Science Fair Project",
+      description: "Create an innovative experiment and present findings",
       duration: "2 weeks", 
       difficulty: "Hard",
       participants: 423,
@@ -42,53 +39,53 @@ const Index = () => {
       points: 500
     },
     {
-      title: "Tree Planting Initiative",
-      description: "Organize and execute a community tree planting event",
+      title: "Literature Analysis Essay",
+      description: "Write a comprehensive analysis of classic literature",
       duration: "1 month",
       difficulty: "Hard", 
       participants: 789,
-      icon: <TreePine className="h-6 w-6" />,
+      icon: <BookOpen className="h-6 w-6" />,
       points: 750
     },
     {
-      title: "Water Conservation Campaign",
-      description: "Create awareness content about water saving techniques",
+      title: "Quick Quiz Marathon",
+      description: "Answer rapid-fire questions across multiple subjects",
       duration: "3 days",
       difficulty: "Easy",
       participants: 2156,
-      icon: <Droplets className="h-6 w-6" />,
+      icon: <Trophy className="h-6 w-6" />,
       points: 150
     }
   ];
 
   const teams = [
     {
-      name: "Eco Warriors",
-      school: "Green Valley High",
+      name: "Study Squad",
+      school: "Riverside High",
       members: 12,
       totalPoints: 4567,
-      currentChallenge: "Solar Panel Design"
+      currentChallenge: "Math Olympics"
     },
     {
-      name: "Climate Crusaders", 
-      school: "Riverside College",
+      name: "Brain Busters", 
+      school: "Oak Valley College",
       members: 15,
       totalPoints: 3890,
-      currentChallenge: "Carbon Footprint Tracker"
+      currentChallenge: "Science Fair Project"
     },
     {
-      name: "Green Guardians",
-      school: "Pine Hill Academy", 
+      name: "Knowledge Knights",
+      school: "Pine Academy", 
       members: 8,
       totalPoints: 3245,
-      currentChallenge: "Recycling Initiative"
+      currentChallenge: "Literature Analysis"
     },
     {
-      name: "Earth Defenders",
-      school: "Oak Tree Institute",
+      name: "Learning Legends",
+      school: "Cedar Institute",
       members: 18,
       totalPoints: 2967,
-      currentChallenge: "Renewable Energy Quiz"
+      currentChallenge: "Quiz Marathon"
     }
   ];
 
@@ -96,9 +93,9 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-accent via-background to-accent/50 p-6 pt-20 lg:pt-24 pb-20 lg:pb-6">
       <div className="max-w-6xl mx-auto space-y-6">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold text-foreground">🎯 Environmental Challenges</h1>
+          <h1 className="text-4xl font-bold text-foreground">🎯 Learning Challenges</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Take on real-world environmental challenges and make a measurable impact while earning points and badges!
+            Take on exciting educational challenges and boost your knowledge while earning points and achievements!
           </p>
         </div>
 
@@ -153,9 +150,9 @@ const Index = () => {
     <div className="min-h-screen bg-gradient-to-br from-accent via-background to-accent/50 p-6 pt-20 lg:pt-24 pb-20 lg:pb-6">
       <div className="max-w-4xl mx-auto space-y-6">
         <div className="text-center space-y-4">
-          <h1 className="text-4xl font-bold text-foreground">👥 Team Collaboration</h1>
+          <h1 className="text-4xl font-bold text-foreground">👥 Study Teams</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            Join forces with classmates to tackle bigger environmental challenges and compete against other schools!
+            Join forces with classmates to tackle challenging subjects and compete against other schools!
           </p>
         </div>
 

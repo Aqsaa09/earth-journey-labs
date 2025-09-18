@@ -7,22 +7,22 @@ import { Trophy, Medal, Award, TrendingUp, Users, School } from "lucide-react";
 
 const Leaderboard = () => {
   const individualLeaders = [
-    { rank: 1, name: "Sarah Chen", school: "Green Valley High", points: 2847, trend: "+15", avatar: "SC", badge: "Eco Champion" },
-    { rank: 2, name: "Marcus Johnson", school: "Riverside College", points: 2734, trend: "+8", avatar: "MJ", badge: "Climate Hero" },
-    { rank: 3, name: "Alex Rivera", school: "Pine Hill Academy", points: 2156, trend: "+12", avatar: "AR", badge: "Green Leader" },
-    { rank: 4, name: "Emma Watson", school: "Oak Tree Institute", points: 1943, trend: "-2", avatar: "EW", badge: "Eco Warrior" },
-    { rank: 5, name: "David Kim", school: "Maple Leaf School", points: 1876, trend: "+5", avatar: "DK", badge: "Nature Guardian" },
-    { rank: 6, name: "Lisa Rodriguez", school: "Willow Creek High", points: 1754, trend: "+18", avatar: "LR", badge: "Earth Protector" },
-    { rank: 7, name: "James Miller", school: "Sunshine Academy", points: 1632, trend: "+3", avatar: "JM", badge: "Green Pioneer" },
-    { rank: 8, name: "Sofia Patel", school: "Crystal Lake College", points: 1589, trend: "+7", avatar: "SP", badge: "Eco Advocate" },
+    { rank: 1, name: "Sarah Chen", school: "Riverside High", points: 2847, trend: "+15", avatar: "SC", badge: "Quiz Master" },
+    { rank: 2, name: "Marcus Johnson", school: "Oak Valley College", points: 2734, trend: "+8", avatar: "MJ", badge: "Knowledge Seeker" },
+    { rank: 3, name: "Alex Rivera", school: "Pine Academy", points: 2156, trend: "+12", avatar: "AR", badge: "Study Champion" },
+    { rank: 4, name: "Emma Watson", school: "Cedar Institute", points: 1943, trend: "-2", avatar: "EW", badge: "Learning Star" },
+    { rank: 5, name: "David Kim", school: "Maple School", points: 1876, trend: "+5", avatar: "DK", badge: "Achievement Hunter" },
+    { rank: 6, name: "Lisa Rodriguez", school: "Willow Academy", points: 1754, trend: "+18", avatar: "LR", badge: "Study Hero" },
+    { rank: 7, name: "James Miller", school: "Sunshine School", points: 1632, trend: "+3", avatar: "JM", badge: "Quick Learner" },
+    { rank: 8, name: "Sofia Patel", school: "Crystal College", points: 1589, trend: "+7", avatar: "SP", badge: "Brain Power" },
   ];
 
   const schoolLeaders = [
-    { rank: 1, name: "Green Valley High School", members: 247, points: 15847, trend: "+156", color: "bg-yellow-500" },
-    { rank: 2, name: "Riverside College", members: 189, points: 14234, trend: "+98", color: "bg-gray-400" },
-    { rank: 3, name: "Pine Hill Academy", members: 156, points: 12876, trend: "+134", color: "bg-amber-600" },
-    { rank: 4, name: "Oak Tree Institute", members: 203, points: 11943, trend: "+67", color: "bg-primary" },
-    { rank: 5, name: "Maple Leaf School", members: 178, points: 10756, trend: "+89", color: "bg-primary" },
+    { rank: 1, name: "Riverside High School", members: 247, points: 15847, trend: "+156", color: "bg-yellow-500" },
+    { rank: 2, name: "Oak Valley College", members: 189, points: 14234, trend: "+98", color: "bg-gray-400" },
+    { rank: 3, name: "Pine Academy", members: 156, points: 12876, trend: "+134", color: "bg-amber-600" },
+    { rank: 4, name: "Cedar Institute", members: 203, points: 11943, trend: "+67", color: "bg-primary" },
+    { rank: 5, name: "Maple School", members: 178, points: 10756, trend: "+89", color: "bg-primary" },
   ];
 
   const getRankIcon = (rank: number) => {
@@ -45,7 +45,7 @@ const Leaderboard = () => {
         <div className="text-center space-y-4">
           <h1 className="text-4xl font-bold text-foreground">🏆 Leaderboard</h1>
           <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-            See how you and your school rank in the fight against climate change. Every action counts!
+            See how you and your school rank in the quest for knowledge. Every lesson completed counts!
           </p>
         </div>
 
@@ -66,7 +66,7 @@ const Leaderboard = () => {
               <CardHeader>
                 <CardTitle className="flex items-center gap-2">
                   <Trophy className="h-5 w-5 text-primary" />
-                  Top Climate Champions
+                  Top Learners
                 </CardTitle>
               </CardHeader>
               <CardContent>

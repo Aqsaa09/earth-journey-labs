@@ -10,7 +10,7 @@ import {
   Settings,
   Menu,
   X,
-  Leaf
+  BookOpen as BookIcon
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -36,9 +36,9 @@ const Navigation = ({ currentView, onViewChange }: NavigationProps) => {
       <nav className="hidden lg:fixed lg:top-0 lg:left-0 lg:right-0 lg:z-50 lg:flex items-center justify-between px-6 py-4 bg-background/80 backdrop-blur-md border-b border-border">
         <div className="flex items-center gap-2">
           <div className="p-2 rounded-lg bg-gradient-primary">
-            <Leaf className="h-6 w-6 text-primary-foreground" />
+            <BookOpen className="h-6 w-6 text-primary-foreground" />
           </div>
-          <span className="text-xl font-bold text-foreground">EcoLearn</span>
+          <span className="text-xl font-bold text-foreground">EduQuest</span>
           <Badge variant="secondary" className="ml-2">Beta</Badge>
         </div>
 
@@ -74,9 +74,9 @@ const Navigation = ({ currentView, onViewChange }: NavigationProps) => {
       <nav className="lg:hidden fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-4 py-3 bg-background/90 backdrop-blur-md border-b border-border">
         <div className="flex items-center gap-2">
           <div className="p-1.5 rounded-md bg-gradient-primary">
-            <Leaf className="h-5 w-5 text-primary-foreground" />
+            <BookIcon className="h-5 w-5 text-primary-foreground" />
           </div>
-          <span className="text-lg font-bold text-foreground">EcoLearn</span>
+          <span className="text-lg font-bold text-foreground">EduQuest</span>
         </div>
 
         <Button
